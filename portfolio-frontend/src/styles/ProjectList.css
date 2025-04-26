@@ -1,0 +1,12 @@
+.project-list {
+  padding: 2rem;
+  background-color: #fafafa;
+  min-height: 80vh;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
