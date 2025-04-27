@@ -5,8 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000000; /* Full black background */
-  padding: 2rem;
+  background-color: black; /* Full black background */
+  padding: 4rem 2rem;
   color: white;
 }
 

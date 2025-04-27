@@ -5,7 +5,7 @@ import skills from '../data/skills'; // assuming you have skills.js
 
 function Skills() {
   return (
-    <section id="skills" className="skills-section">
+    <section id="skills" className="skills-section" data-aos="fade-up">
       <div className="skills-content">
         <h2>Skills</h2>
         <div className="skills-grid">

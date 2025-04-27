@@ -5,7 +5,7 @@ import headshot from '../assets/headshot.png';
 
 function Home() {
   return (
-    <section id="home" className="home-section">
+    <section id="home" className="home-section" data-aos="fade-up">
       <div className="home-container">
 
         <div className="home-text">

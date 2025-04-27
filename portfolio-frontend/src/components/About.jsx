@@ -4,7 +4,7 @@ import '../styles/About.css'; // We'll create this file next
 
 function About() {
   return (
-    <section id="about" className="about-section">
+    <section id="about" className="about-section" data-aos="fade-right">
       <div className="about-content">
         <h2>About Me</h2>
         <p>

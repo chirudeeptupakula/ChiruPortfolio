@@ -19,7 +19,7 @@ function Certifications() {
   ];
 
   return (
-    <section id="certifications" className="certifications-section">
+    <section id="certifications" className="certifications-section" data-aos="fade-up">
       <div className="certifications-content">
         <h2>Certifications</h2>
         <div className="certifications-grid">

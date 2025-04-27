@@ -1,38 +1,122 @@
 /* src/styles/Navbar.css */
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #000000;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 1rem 2rem;
-  background-color: #000000; /* Black background */
-  color: #ffffff;
+  box-sizing: border-box;
 }
 
 .navbar-left {
   display: flex;
   align-items: center;
+  min-width: 300px;
 }
 
 .navbar-logo {
-  width: 50px; /* ⬆️ increased size */
+  width: 50px;
   height: 50px;
-  margin-right: 1rem;
+  margin-right: 0.8rem;
 }
 
 .navbar-brand {
-  font-size: 2rem; /* ⬆️ Bigger name */
+  font-size: 1.8rem;
   font-weight: bold;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
 }
 
 .navbar-links a {
-  margin-left: 20px;
   text-decoration: none;
   color: #ffffff;
-  font-size: 1.1rem;
   font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
   text-decoration: underline;
+}
+
+/* Menu Icon (hidden on desktop) */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* Open menu animation */
+.bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ===========================
+   Responsive for Mobile
+   =========================== */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .navbar-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    display: none; /* hide by default */
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links a {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
 }

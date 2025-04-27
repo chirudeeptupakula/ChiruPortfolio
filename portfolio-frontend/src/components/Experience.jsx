@@ -5,7 +5,7 @@ import experiences from '../data/experience';
 
 function Experience() {
   return (
-    <section id="experience" className="experience-section">
+    <section id="experience" className="experience-section" data-aos="fade-left">
       <h2>Experience</h2>
       <div className="timeline">
         {experiences.map((exp, index) => (

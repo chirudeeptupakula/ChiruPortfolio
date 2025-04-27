@@ -1,0 +1,29 @@
+/* src/styles/Divider.css */
+
+.divider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0; /* spacing above and below */
+  position: relative;
+}
+
+.divider-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #555; /* light grey line */
+  opacity: 0.5;
+}
+
+.divider-logo {
+  margin: 0 1rem;
+  background-color: #000; /* black background to match your theme */
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid #555;
+}
+
+.divider-logo img {
+  width: 40px;
+  height: 40px;
+}
