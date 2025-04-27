@@ -5,12 +5,25 @@ import '../styles/Contact.css';
 function Contact() {
   return (
     <section id="contact" className="contact-section">
-      <h2>Contact Me</h2>
-      <p>You can reach me through the following ways:</p>
-      <div className="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:chirudeep.tupakula@okstate.edu">chirudeep.tupakula@okstate.edu</a></p>
-        <p><strong>Phone:</strong> +1 405-293-5131</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/chirudeep-tupakula-99bb5a1b1/" target="_blank" rel="noopener noreferrer">View Profile</a></p>
+      <div className="contact-content">
+        <h2>Contact Me</h2>
+
+        <p className="email-text">Prefer email? Direct mail me:</p>
+
+        <div className="email-link">
+          <a href="mailto:chirudeep.tupakula@okstate.edu" target="_blank" rel="noopener noreferrer">
+            chirudeep.tupakula@okstate.edu
+          </a>
+        </div>
+
+        <div className="social-icons">
+          <a href="https://github.com/chirudeeptupakula" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/chirudeep-tupakula-99bb5a1b1/" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin-in"></i>
+          </a>
+        </div>
       </div>
     </section>
   );

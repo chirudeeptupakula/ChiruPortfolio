@@ -8,6 +8,7 @@ import ProjectList from './components/ProjectList';
 import Experience from './components/Experience';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
+import About from './components/About';
 import './styles/App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <main>
         <Home />
+        <About />
         <Skills />
         <ProjectList />
         <Experience />

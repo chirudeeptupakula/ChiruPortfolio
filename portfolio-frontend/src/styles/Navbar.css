@@ -1,16 +1,35 @@
+/* src/styles/Navbar.css */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #24292e;
-  color: #fff;
+  background-color: #000000; /* Black background */
+  color: #ffffff;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 50px; /* ⬆️ increased size */
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.navbar-brand {
+  font-size: 2rem; /* ⬆️ Bigger name */
+  font-weight: bold;
 }
 
 .navbar-links a {
   margin-left: 20px;
   text-decoration: none;
   color: #ffffff;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
