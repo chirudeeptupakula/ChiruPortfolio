@@ -10,6 +10,7 @@ import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import About from './components/About';
 import './styles/App.css';
+import './styles/Responsive.css';
 
 function App() {
   return (
