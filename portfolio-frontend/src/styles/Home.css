@@ -1,15 +1,32 @@
 /* src/styles/Home.css */
 
+/* Import modern Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+}
+
+/* Home Section */
 .home-section {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black; /* Full black background */
   padding: 4rem 2rem;
-  color: white;
 }
 
+/* Container Layout */
 .home-container {
   display: flex;
   align-items: center;
@@ -19,37 +36,63 @@
   gap: 2rem;
 }
 
+/* Text Section */
 .home-text {
   flex: 1;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .intro-text {
   font-size: 1.5rem;
-  color: #e0e0e0;
+  color: #333;
   margin-bottom: 1rem;
   letter-spacing: 2px;
 }
 
-.home-text h1 {
-  font-size: 4rem; /* ⬆️ Big name */
-  margin-bottom: 0.5rem;
+/* Name Heading with split color and animation */
+.name-heading {
+  font-size: 4rem;
   font-weight: 900;
+  display: flex;
+  flex-wrap: wrap;
+  animation: zoomFadeInUp 0.8s ease-out forwards;
+  opacity: 0;
 }
 
-
-
-.home-text h2 {
-  font-size: 2.5rem; /* ⬆️ Big title */
-  margin-bottom: 1rem;
-  font-weight: 700;
+.dark-text {
+  color: #2d2d2d;
 }
 
+.orange-text {
+  color: #b4552d;
+}
+
+/* Subheadings */
+.animated-subheading {
+  font-size: 2rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: zoomFadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.delay-1 {
+  animation-delay: 1s;
+}
+
+.delay-2 {
+  animation-delay: 1.5s;
+}
+
+/* Subtext */
 .subtext {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  color: #e0e0e0;
+  color: #333;
 }
 
+/* Buttons */
 .button-group {
   margin-top: 1rem;
 }
@@ -70,6 +113,7 @@
   color: #000000;
 }
 
+/* Image Section */
 .home-image {
   flex: 1;
   display: flex;
@@ -81,14 +125,29 @@
   width: 100%;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Soft white glow */
-}
-.home-text {
-  flex: 1;
-  animation: fadeIn 2s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft black glow on white bg */
 }
 
+/* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+@keyframes zoomFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+

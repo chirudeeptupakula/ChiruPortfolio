@@ -1,5 +1,4 @@
 // src/App.jsx
-import ParticlesBackground from './components/ParticlesBackground';
 import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -28,9 +27,8 @@ useEffect(() => {
   }, []);
   return (
     <div style={{ position: "relative", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-    <ParticlesBackground />
       <Navbar />
-      <main>
+        <main className="main-content">
         <Home />
         <Divider />
         <About />

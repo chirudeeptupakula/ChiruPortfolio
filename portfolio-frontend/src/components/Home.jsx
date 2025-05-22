@@ -7,16 +7,16 @@ function Home() {
   return (
     <section id="home" className="home-section" data-aos="fade-up">
       <div className="home-container">
+            <div className="home-text">
 
-        <div className="home-text">
           <h1 className="animated-heading">
-            <span>Chirudeep</span> <span>Tupakula</span>
+            <span className="dark-text">Chirudeep</span> <span className="orange-text">Tupakula</span>
           </h1>
-          <h2 className="animated-subheading">
-            <span>Oklahoma</span> <span>State</span> <span>University</span> <span>25'</span> <br />
-            <span>Master's</span> <span>in</span> <span>Computer</span> <span>Science</span>
+          <h2 className="animated-subheading delay-1">
+            Oklahoma State University 25' <br />
+            Master's in Computer Science
           </h2>
-          <h2 className="animated-subheading">
+          <h2 className="animated-subheading delay2">
             <span>Data</span> <span>Engineer</span>
           </h2>
         </div>

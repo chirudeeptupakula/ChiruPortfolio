@@ -1,8 +1,15 @@
-main {
-  margin-top: 90px; /* space to push content down */
+/* App.css or index.css */
+
+.app-layout {
+  display: flex;
+  position: relative;
+}
+.main-content {
+  margin-left: 250px; /* same as sidebar width */
   padding: 2rem;
+  width: calc(100% - 250px);
+  box-sizing: border-box;
+  position: relative; /* not fixed or absolute */
+  z-index: 1;
 }
 
-main section {
-  margin-bottom: 4rem;
-}

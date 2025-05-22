@@ -2,8 +2,8 @@
 
 .experience-section {
   padding: 4rem 2rem;
-  background-color: #000000;
-  color: white;
+  background-color: white;
+  color: black;
   text-align: center;
 }
 
@@ -23,7 +23,7 @@
   content: '';
   position: absolute;
   width: 4px;
-  background-color: #ffffff;
+  background-color: black;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -46,18 +46,30 @@
 
 .timeline-dot {
   position: absolute;
-  top: 20px;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: #ffffff;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 4px solid #C25C36;
   border-radius: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
+  z-index: 2;
 }
 
+
+/* Left card (odd) — dot on the right side of card */
+.timeline-item:nth-child(odd) .timeline-dot {
+  right: -8px;
+}
+
+/* Right card (even) — dot on the left side of card */
+.timeline-item:nth-child(even) .timeline-dot {
+  left: -8px;
+}
+
+
 .timeline-content {
-  background-color: #111111;
+  background-color: #C25C36;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
@@ -68,27 +80,30 @@
 .timeline-content h3 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
+  color: black
 }
 
 .timeline-content h4 {
   font-size: 1.2rem;
-  color: #cccccc;
+  color: black;
   margin-bottom: 1rem;
 }
 
 .experience-date {
   font-style: italic;
-  color: #888888;
+  color: black;
   margin-bottom: 1rem;
 }
 
 .timeline-content ul {
   padding-left: 1.5rem;
   text-align: left;
+  color: black;
+
 }
 
 .timeline-content li {
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  color: #cccccc;
+  color: black;
 }

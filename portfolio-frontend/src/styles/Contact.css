@@ -2,14 +2,15 @@
 
 .contact-section {
   padding: 4rem 2rem;
-  background-color: #000000;
-  color: white;
+  background-color: white;
+  color: black;
   text-align: center;
 }
 
 .contact-content {
   max-width: 600px;
   margin: 0 auto;
+  color:black
 }
 
 .contact-content h2 {
@@ -20,13 +21,13 @@
 .email-text {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #cccccc;
+  color: black;
 }
 
 .email-link a {
   font-size: 1.3rem;
   font-weight: 600;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -43,11 +44,11 @@
 
 .social-icons a {
   font-size: 2.5rem;
-  color: white;
+  color: black;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-icons a:hover {
   transform: scale(1.2);
-  color: #cccccc;
+  color: #C25C36;
 }

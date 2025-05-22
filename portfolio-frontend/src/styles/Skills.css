@@ -2,8 +2,8 @@
 
 .skills-section {
   padding: 4rem 2rem;
-  background-color: #000000; /* Black */
-  color: white; /* White text */
+  background-color: white;
+  color: black;
   text-align: center;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .skill-card {
-  background-color: #111111; /* Slightly lighter black */
+  background-color: #C25C36; /* Slightly lighter black */
   padding: 1rem 2rem;
   border-radius: 10px;
   font-size: 1.2rem;
@@ -35,5 +35,5 @@
 
 .skill-card:hover {
   transform: translateY(-5px);
-  background-color: #1a1a1a; /* Darker on hover */
+  background-color: #C25C36; /* Darker on hover */
 }

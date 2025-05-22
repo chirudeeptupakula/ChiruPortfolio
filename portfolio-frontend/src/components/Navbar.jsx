@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import React, { useState } from 'react';
 import '../styles/Navbar.css';
-import portfolioLogo from '../assets/portfolioLogo.png';
+import portfolioLogo from '../assets/portfolioLogo.png'; // your logo or image
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,29 +10,34 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false); // close sidebar after clicking link on mobile
+  };
+
   return (
-    <nav className="navbar">
-      <div className="navbar-left">
-        <img src={portfolioLogo} alt="Logo" className="navbar-logo" />
-        <span className="navbar-brand">Chirudeep Tupakula</span>
+    <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
+      {/* Logo + Name */}
+      <div className="navbar-logo">
+        <img src={portfolioLogo} alt="Logo" />
+        <span className="navbar-name">Chirudeep Tupakula</span>
       </div>
 
-      {/* Menu Icon for Mobile */}
+      {/* Mobile menu icon */}
       <div className="menu-icon" onClick={handleMenuToggle}>
         <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
         <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
         <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
       </div>
 
-      {/* Normal Navbar Links */}
+      {/* Navigation links */}
       <div className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
-        <a href="#home" onClick={handleMenuToggle}>Home</a>
-        <a href="#about" onClick={handleMenuToggle}>About</a>
-        <a href="#projects" onClick={handleMenuToggle}>Projects</a>
-        <a href="#skills" onClick={handleMenuToggle}>Skills</a>
-        <a href="#experience" onClick={handleMenuToggle}>Experience</a>
-        <a href="#certifications" onClick={handleMenuToggle}>Certifications</a>
-        <a href="#contact" onClick={handleMenuToggle}>Contact</a>
+        <a href="#home" onClick={handleLinkClick}>Home</a>
+        <a href="#about" onClick={handleLinkClick}>About</a>
+        <a href="#skills" onClick={handleLinkClick}>Skills</a>
+        <a href="#projects" onClick={handleLinkClick}>Projects</a>
+        <a href="#experience" onClick={handleLinkClick}>Experience</a>
+        <a href="#certifications" onClick={handleLinkClick}>Certifications</a>
+        <a href="#contact" onClick={handleLinkClick}>Contact</a>
       </div>
     </nav>
   );

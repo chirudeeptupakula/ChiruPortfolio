@@ -2,8 +2,8 @@
 
 .about-section {
   padding: 4rem 2rem;
-  background-color: #000000; /* black background */
-  color: #ffffff; /* white text */
+  background-color: white; /* black background */
+  color: black; /* white text */
   text-align: center;
 }
 
@@ -21,5 +21,5 @@
   font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  color: #cccccc; /* soft white for paragraphs */
+  color: black; /* soft white for paragraphs */
 }
