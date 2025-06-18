@@ -1,9 +1,9 @@
 // src/data/experience.js
 const experiences = [
   {
-    title: "Graduate Research Assistant",
+    title: "Data Engineer",
     company: "Oklahoma State University",
-    date: "09/2023 – Present",
+    date: "09/2023 – 05/2025",
     responsibilities: [
       "Built real-time streaming pipelines on AWS using Apache Kafka and PySpark, ingesting student behavioral data.",
       "Automated batch ETL pipelines in Databricks with Delta Lake, improving SLA compliance to 95%.",
@@ -21,7 +21,7 @@ const experiences = [
     ]
   },
   {
-    title: "Big Data Intern",
+    title: "Big Data Engineer",
     company: "Forsys Inc",
     date: "05/2021 – 04/2022",
     responsibilities: [

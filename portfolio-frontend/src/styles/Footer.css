@@ -1,9 +1,12 @@
 .footer {
-  background-color: #000000; /* black footer */
+  background-color: #000000;
   color: #ffffff;
-  text-align: center;
-  padding: 1.5rem 0;
   font-size: 0.9rem;
   opacity: 0.8;
-  margin-left:250px;
+  padding: 1.5rem 0;
+
+  position: relative;
+  left: 250px;                 /* shift it to the right of the sidebar */
+  width: calc(100% - 250px);  /* take only remaining width */
+  text-align: center;
 }

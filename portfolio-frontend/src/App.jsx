@@ -17,6 +17,8 @@ import './styles/Responsive.css';
 import ScrollToTop from './components/ScrollToTop';
 import Divider from './components/Divider'
 
+import bgImage from './assets/osulibraryGhibli.png'; // Ghibli Image
+import StarBackground from './components/StarBackground';
 
 function App() {
 useEffect(() => {
@@ -27,8 +29,14 @@ useEffect(() => {
   }, []);
   return (
     <div style={{ position: "relative", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-      <Navbar />
         <main className="main-content">
+
+        <div
+          className="background-wrapper"
+          style={{ backgroundImage: `url(${bgImage})` }}
+        ></div>
+      <StarBackground />
+      <Navbar />
         <Home />
         <Divider />
         <About />

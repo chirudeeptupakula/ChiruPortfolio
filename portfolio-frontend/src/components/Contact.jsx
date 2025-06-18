@@ -11,8 +11,8 @@ function Contact() {
         <p className="email-text">Prefer email? Direct mail me:</p>
 
         <div className="email-link">
-          <a href="mailto:chirudeep.tupakula@okstate.edu" target="_blank" rel="noopener noreferrer">
-            chirudeep.tupakula@okstate.edu
+          <a href="mailto:chirudeeptupakula@gmail.com" target="_blank" rel="noopener noreferrer">
+            chirudeeptupakula@gmail.com
           </a>
         </div>
 

@@ -16,7 +16,26 @@ const projects = [
     github: "https://github.com/yourusername/sales-analytics-pipeline", // <-- Put real GitHub link if available
     techStack: ["PySpark", "AWS S3", "Delta Lake", "AWS Glue", "FastAPI", "Docker", "Power BI"],
     imageUrl: "/sales_project_placeholder.png"
-  }
+  },
+  {
+      id: 3,
+      title: "Ambiguity Detection with Human-in-the-Loop Validation",
+      description: "Developed a machine learning system to detect ambiguous input cases and validate predictions via crowdsourced survey graphs. Human feedback was looped back to fine-tune the model iteratively, ensuring higher explainability and prediction trust.",
+      github: "https://github.com/chirudeeptupakula/AmbiguityDetection", // Replace with actual link if available
+      techStack: ["Python", "Scikit-learn", "Matplotlib", "Crowdsourcing", "Human-in-the-loop", "ML Explainability"],
+      imageUrl: "/ambiguity_project_placeholder.png" // Replace with real image when available
+    },
+    {
+      id: 4,
+      title: "Cowboy Connect – Volunteer Tracker & LMS with AI Chatbot",
+      description: "Built a full-stack web app to manage student volunteer hours and classroom lessons. Integrated a ChatGPT-style LLM chatbot using OpenAI for real-time help and query routing. Includes authentication, club management, and assignment tracking.",
+      github: "https://github.com/chirudeeptupakula/CowboyConnect",
+      techStack: ["React", "FastAPI", "PostgreSQL", "OpenAI", "Tailwind CSS", "LLM Chatbot"],
+      imageUrl: "/cowboy_connect_placeholder.png" // Replace with actual image later if available
+    }
+
+
+
 ];
 
 export default projects;

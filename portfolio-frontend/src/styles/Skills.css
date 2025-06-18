@@ -1,10 +1,10 @@
-/* src/styles/Skills.css */
-
 .skills-section {
   padding: 4rem 2rem;
-  background-color: white;
-  color: black;
+  background: #0a0a0a;  /* Dark backdrop if stars are visible */
+  color: #ffffff;
   text-align: center;
+  z-index: 1;
+  position: relative;
 }
 
 .skills-content {
@@ -15,25 +15,32 @@
 .skills-content h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .skill-card {
-  background-color: #C25C36; /* Slightly lighter black */
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.9rem 1.8rem;
+  border-radius: 12px;
+  font-size: 1rem;
   font-weight: 600;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  cursor: default;
 }
 
 .skill-card:hover {
-  transform: translateY(-5px);
-  background-color: #C25C36; /* Darker on hover */
+  transform: translateY(-6px) scale(1.05);
+  background-color: #C25C36;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }

@@ -1,15 +1,21 @@
-/* App.css or index.css */
-
 .app-layout {
   display: flex;
-  position: relative;
 }
+
 .main-content {
-  margin-left: 250px; /* same as sidebar width */
-  padding: 2rem;
+  margin-left: 250px; /* match navbar width */
   width: calc(100% - 250px);
-  box-sizing: border-box;
-  position: relative; /* not fixed or absolute */
+  position: relative;
   z-index: 1;
 }
 
+.main-background {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.8;
+  min-height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
