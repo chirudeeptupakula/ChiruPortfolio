@@ -1,20 +1,33 @@
 // src/components/About.jsx
 import React from 'react';
-import '../styles/About.css'; // We'll create this file next
+import '../styles/About.css';
 
 function About() {
   return (
     <section id="about" className="about-section" data-aos="fade-up">
       <h2>About Me</h2>
+
       <p className="about-text">
-        I’m <strong>Chirudeep Tupakula</strong>, a Data Engineer with 2+ years of experience designing high-performance data platforms, GenAI APIs, and cloud-native pipelines. Currently pursuing my Master’s in Computer Science at <strong>Oklahoma State University</strong>, I specialize in building scalable lakehouse architectures and intelligent microservices that deliver real-world impact.
-        <br /><br />
-        I’ve engineered production-grade ETL systems handling 1M+ daily events using <strong>PySpark, Kafka, Delta Lake</strong> (AWS/Azure), and surfaced analytics via <strong>Redshift, Athena</strong>, and <strong>Snowflake</strong>. My latest work includes a GenAI-powered <strong>FastAPI</strong> service using <strong>OpenAI + FAISS</strong> deployed on AWS Lambda, reducing retrieval latency by 40%.
-        <br /><br />
-        With a strong foundation in <strong>Python, FastAPI, AWS, and Airflow</strong>, I thrive at the intersection of data engineering and AI — crafting scalable, intelligent solutions with measurable value.
+        I’m <strong>Chirudeep Tupakula</strong>—a Python&nbsp;Full-Stack&nbsp;GenAI&nbsp;Developer &amp; Data&nbsp;Engineer with 2 + years leading
+        scalable GenAI APIs and big-data solutions in <strong>AWS</strong> and <strong>Azure</strong>.
+        I build enterprise-grade microservices with <strong>Flask / FastAPI, OpenAI, RAG,</strong> and&nbsp;<strong>Llama</strong>,
+        then surface insights through modern <strong>React.js</strong> front-ends.
+      </p>
+
+      <p className="about-text">
+        My toolkit spans <strong>Spark, PySpark, Spark ML, TensorFlow</strong> for large-scale data engineering and ML pipelines,
+        plus <strong>Databricks</strong> for seamless end-to-end workflows. Recent work includes a GenAI-powered FastAPI service
+        on <strong>AWS&nbsp;Lambda</strong> that cut retrieval latency 40 %, and lakehouse architectures ingesting 1 M + events/day with
+        <strong> Kafka, Delta Lake, Redshift,</strong> and <strong>Athena</strong>.
+      </p>
+
+      <p className="about-text">
+        I’m comfortable containerising with <strong>Docker</strong>, automating releases via <strong>CI/CD</strong>,
+        and collaborating in agile, cross-functional teams. Currently pursuing an M.S. in Computer Science at
+        <strong> Oklahoma State University</strong>, I thrive at the intersection of data engineering and AI—delivering
+        robust, customer-focused GenAI products that drive measurable value.
       </p>
     </section>
-
   );
 }
 

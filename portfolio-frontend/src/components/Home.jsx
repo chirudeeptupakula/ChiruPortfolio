@@ -21,7 +21,7 @@ function Home() {
           </h2>
 
           <h2 className="animated-subheading delay2">
-            <span>Data</span> <span>Engineer</span>
+            <span>Data</span> <span>Engineer  </span>
           </h2>
 
           {/* 💬 Add This New Animated Bio */}
